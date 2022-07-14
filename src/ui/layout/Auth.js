@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { useUser } from './hooks';
+import { useUser } from '../hooks';
 
-import Anon from './Anon';
-import AuthRoutes from './layout/AuthRoutes';
+import Anon from '../pages/Anon';
+import AuthRoutes from './AuthRoutes';
 import { useDispatch } from 'react-redux';
 
 const Auth = () => {

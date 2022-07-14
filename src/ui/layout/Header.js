@@ -23,21 +23,36 @@ const Header = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          {!!user && (
-            <>
-              <div className="navbar-nav">
-                <NavLink className="nav-link" to="/tickets">
-                  Tickets
-                </NavLink>
-                <NavLink className="nav-link" to="/projects">
-                  Projects
-                </NavLink>
-                <NavLink className="nav-link" to="/new">
-                  Create Ticket
-                </NavLink>
-              </div>
-            </>
-          )}
+          <div className="navbar-nav me-auto">
+            {!!user && (
+              <>
+                <div className="navbar-nav">
+                  <NavLink className="nav-link" to="/tickets">
+                    Tickets
+                  </NavLink>
+                  <NavLink className="nav-link" to="/projects">
+                    Projects
+                  </NavLink>
+                  <NavLink className="nav-link" to="/new">
+                    Create Ticket
+                  </NavLink>
+                </div>
+              </>
+            )}
+          </div>
+          <div className="navbar-text">
+            <span className="badge bg-dark">
+              <h2>
+                <a
+                  href="https://github.com/davidespo/avn-support-tools"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fa fa-github"></i>
+                </a>
+              </h2>
+            </span>
+          </div>
         </div>
       </div>
     </nav>

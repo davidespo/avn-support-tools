@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from './layout/Header';
-import Auth from './Auth';
+import Auth from './layout/Auth';
 
 const App = () => {
   return (

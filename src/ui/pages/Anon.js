@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { useApiKey } from './hooks';
+import { useApiKey } from '../hooks';
 import { useDispatch } from 'react-redux';
 
 import Home from './Home';
