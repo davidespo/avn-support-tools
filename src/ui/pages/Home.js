@@ -15,7 +15,17 @@ const Home = ({ showSecurity }) => {
       </p>
       {showSecurity && (
         <>
-          <p>Use this project at your own risk.</p>
+          <p>
+            Use this project at your own risk. Or{' '}
+            <a
+              href="https://github.com/davidespo/avn-support-tools"
+              target="_blank"
+              rel="noreferrer"
+            >
+              fork
+            </a>{' '}
+            it and make it your own!
+          </p>
           <div>
             <img src={security} alt="" />
           </div>
