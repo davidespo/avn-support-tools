@@ -14,10 +14,24 @@ import BasicDataTable, {
 import SeverityPill from '../common/SeverityPill';
 import TicketStatePill from '../common/TicketStatePill';
 
+// https://console.aiven.io/project/business-demo/support#:~:text=No-,T%2D2FOJM
+
 const COLUMNS = [
   basicCol('ID', 'ticket_id'),
   relativeDateCol('Created', 'create_time'),
-  basicCol('Project', 'project_name'),
+  col('Project', (row) => row.project_name, false, {
+    cell: (row) => (
+      <a
+        href={`https://console.aiven.io/project/${
+          row.project_name
+        }/support#:~:text=${row.ticket_id.split('-')[1]}`}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {row.project_name} <i className="fa fa-external-link"></i>
+      </a>
+    ),
+  }),
   basicCol('Service', 'service_name'),
   col('Severity', (row) => row.severity, false, {
     cell: (row) => <SeverityPill severity={row.severity} />,
@@ -50,7 +64,6 @@ const Fetcher = ({ setTickets, projectsOverride = null }) => {
   const [running, setRunning] = useState(false);
   const [project, setProject] = useState(null);
   const user = useUser();
-  console.log(projectsOverride);
   const allProjects = projectsOverride ?? user.projects;
   const fetchAllProjects = async () => {
     if (!running) {
