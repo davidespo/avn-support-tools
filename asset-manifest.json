@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.df6814a7.js",
-    "static/js/787.4b77916b.chunk.js": "/static/js/787.4b77916b.chunk.js",
-    "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.df6814a7.js.map": "/static/js/main.df6814a7.js.map",
-    "787.4b77916b.chunk.js.map": "/static/js/787.4b77916b.chunk.js.map"
+    "main.css": "/avn-support-tools/static/css/main.e6c13ad2.css",
+    "main.js": "/avn-support-tools/static/js/main.05574837.js",
+    "static/js/787.4b77916b.chunk.js": "/avn-support-tools/static/js/787.4b77916b.chunk.js",
+    "index.html": "/avn-support-tools/index.html",
+    "main.e6c13ad2.css.map": "/avn-support-tools/static/css/main.e6c13ad2.css.map",
+    "main.05574837.js.map": "/avn-support-tools/static/js/main.05574837.js.map",
+    "787.4b77916b.chunk.js.map": "/avn-support-tools/static/js/787.4b77916b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.df6814a7.js"
+    "static/js/main.05574837.js"
   ]
 }
